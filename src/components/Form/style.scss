@@ -1,0 +1,40 @@
+.form-principal{
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+
+  .input{
+    border: none;
+    width: 17rem;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    background-color: transparent;
+    border-bottom: 3px solid #272735;
+    color: white;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .submit{
+    height: 2.5rem;
+    width: 5.5rem;
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #8729ca 0%, #a044ff 50%, #2d6fc5 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-size: 200% auto;        
+    box-shadow: 0 0 10px rgba(182, 37, 240, 0.678);
+    cursor: pointer;
+    
+    transition: 0.5s;
+    
+    &:hover{
+      background-position: right center;
+    }
+  }
+}

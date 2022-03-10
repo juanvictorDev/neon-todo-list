@@ -1,0 +1,127 @@
+.todos-container{
+  margin:0 auto;
+  width: 24rem;
+  height: 21rem;
+  overflow: auto;
+};
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.212) rgba(17, 14, 19, 0.363);
+  
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(17, 14, 19, 0.363);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    border: 1px solid rgba(17, 14, 19, 0.363);
+  }
+}
+
+.todo-container{
+  background: linear-gradient(to right, #8729ca, #a044ff, #2d6fc5);
+  background-size:300% 300%;
+  animation: colorsTransition 2s ease infinite;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+  display: flex;
+
+  @keyframes colorsTransition {
+    0%{
+      background-position:0% 50%;
+    }
+
+    50%{
+      background-position:100% 50%;
+    }
+  
+    100%{
+      background-position:0% 50%;
+    }
+  }
+
+  .text{
+    flex: 6;
+    overflow:auto;
+    padding: 3px 7px 0px 7px;
+    color: white;
+    transition: .2s;
+  }
+
+  .buttons-container{
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+  
+    .btn{
+      padding-top: 5px;
+      border:none;
+      background-color:transparent;
+      font-size:1.3rem;
+      color: white;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .edit, .complete{
+      padding-top: 6px;
+    }
+
+    .complete:hover{
+      color: rgb(97, 199, 247);
+    }
+
+    .delete:hover{
+      color: rgb(240, 113, 151);
+    }
+
+    .edit:hover{
+      color:rgb(72, 243, 123);
+    }
+  
+  }
+}
+
+.todo-container-complete{
+  background: linear-gradient(to right,#25d1c3,#38da8e);
+  
+  .text{
+    color: rgba(255, 255, 255, 0.836);
+    text-decoration: line-through;
+  }
+
+  .buttons-container{
+    .btn{
+      color: rgba(255, 255, 255, 0.589);
+    }
+  }
+
+}
+
+.empty{  
+  color: rgba(255, 255, 255, 0.123);
+  text-align: center;
+  margin-top: 7.3rem;
+
+  h2{
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .todos-container{
+    height: 35rem;
+  };
+
+  .empty{
+    margin-top:13rem;
+  }
+}
