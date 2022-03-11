@@ -19,7 +19,7 @@ export function ContextProvider({children}) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if(todo.length == 0){return};
+    if(todo.length === 0){return};
     
     const add = {
       id: new Date().getTime(),
@@ -59,7 +59,7 @@ export function ContextProvider({children}) {
   //fechar modal cliclando fora 
   function outsideClick(e) {
     const id = 'modal-background';
-    if (e.target.id == id) {
+    if (e.target.id === id) {
       setModalStats(false);
     }
   }

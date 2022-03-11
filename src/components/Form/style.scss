@@ -38,3 +38,17 @@
     }
   }
 }
+
+@media (max-width: 1024px){
+ .form-principal{
+   .input{
+     font-size:2rem;
+   }
+
+   .submit{
+      font-size:2rem;
+      height: 3rem;
+      width: 6.2rem;
+    }
+ }
+}

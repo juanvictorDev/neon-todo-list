@@ -118,3 +118,42 @@
     }
   }
 }
+
+@media (max-width: 1024px){
+  
+  .container-modal{
+    max-width:30rem;
+    max-height: 12rem;
+  }
+  
+  .modal-header{
+    h2{
+      margin-left: 5.8rem;
+      padding-top: 1.8rem;
+      font-size:2.7rem;
+    }
+    
+    .exit-modal{
+      align-self: flex-start;
+      margin-top:1rem;
+    }
+    
+  }
+
+  .form-modal{
+    padding: 1rem 0 0 4rem;
+    display:flex;
+  
+    .input-modal{
+      width: 17rem;
+      font-size: 1.9rem;
+    }
+
+    .btn-modal{
+      height: 3rem;
+      width: 5.5rem;
+      font-size: 2rem;
+    }
+  }
+  
+}
